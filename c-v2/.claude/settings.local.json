@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmake:*)",
+      "Bash(make:*)",
+      "Bash(grep:*)",
+      "Bash(xargs cat:*)",
+      "Bash(flutter:*)",
+      "Bash(echo:*)",
+      "Bash(source ~/.bashrc)",
+      "Bash(dpkg:*)",
+      "Bash(rpm:*)",
+      "Bash(/usr/share/code/bin/code:*)"
+    ]
+  }
+}
