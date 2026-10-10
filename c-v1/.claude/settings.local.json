@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make:*)",
+      "Bash(make)",
+      "Bash(tree:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRefactor: modular subfolder structure with reusable modules\n\nArchitecture changes:\n- Reorganized into subfolders: core/, world/, physics/, materials/, subsystems/, engine/\n- All includes now use relative paths \\(e.g., \"world/world.h\"\\)\n\nNew modules added:\n- cell_ops.h: Cell movement, state checks, neighbor iteration\n- physics.h: Gravity, velocity, collision response, pressure\n- behavior.h: Material behavior flags, state transitions, reactions\n- grid_iter.h: Grid traversal patterns with chunk optimization\n- utils.h: Shared RNG and hash functions\n\nRefactored subsystems:\n- powder.c, fluid.c, fire.c, acid.c, thermal.c now use shared modules\n- Eliminated code duplication \\(RNG, neighbor arrays, grid iteration\\)\n- Consistent API for cell operations and physics calculations\n\nBuild system:\n- Updated Makefile for recursive source file discovery\n- Maintains directory structure in build/ folder\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(git commit --amend -m \"$\\(cat <<''EOF''\nRefactor: modular subfolder structure with reusable modules\n\nArchitecture changes:\n- Reorganized into subfolders: core/, world/, physics/, materials/, subsystems/, engine/\n- All includes now use relative paths \\(e.g., \"world/world.h\"\\)\n\nNew modules added:\n- cell_ops.h: Cell movement, state checks, neighbor iteration\n- physics.h: Gravity, velocity, collision response, pressure\n- behavior.h: Material behavior flags, state transitions, reactions\n- grid_iter.h: Grid traversal patterns with chunk optimization\n- utils.h: Shared RNG and hash functions\n\nRefactored subsystems:\n- powder.c, fluid.c, fire.c, acid.c, thermal.c now use shared modules\n- Eliminated code duplication \\(RNG, neighbor arrays, grid iteration\\)\n- Consistent API for cell operations and physics calculations\n\nBuild system:\n- Updated Makefile for recursive source file discovery\n- Maintains directory structure in build/ folder\nEOF\n\\)\")",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git rebase:*)",
+      "WebSearch",
+      "WebFetch(domain:docs.github.com)",
+      "WebFetch(domain:stackoverflow.com)",
+      "WebFetch(domain:github.community)",
+      "Bash(git filter-branch:*)"
+    ]
+  }
+}
